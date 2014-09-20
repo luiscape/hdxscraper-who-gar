@@ -56,7 +56,7 @@ scrapeList <- function(year = 2014) {
   output$desease <- ifelse(grepl("enterovirus", output$url), 'Enterovirus', output$desease)
   output$desease <- ifelse(grepl("avian_influenza", output$url), 'Avian Influenza', output$desease)
   output$desease <- ifelse(grepl("mers", output$url), 'MERS', output$desease)
-  output$desease <- ifelse(grepl("h7n9", output$url), 'H7N9', output$desease)
+  output$desease <- ifelse(grepl("h7n9", output$url), 'Avian Influenza', output$desease)
   output$desease <- ifelse(grepl("cholera", output$url), 'Cholera', output$desease)
   output$desease <- ifelse(grepl("coronavirus", output$url), 'Coronavirus', output$desease)
   output$desease <- ifelse(grepl("ncov", output$url), 'NCOV', output$desease)
